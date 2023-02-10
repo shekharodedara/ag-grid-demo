@@ -1,0 +1,11 @@
+<ng-container *ngIf="params">
+    <button *ngIf="params.addBtn" mat-icon-button color="primary" title="Add" (click)="onAddAction()">
+        <mat-icon>add_circle</mat-icon>
+    </button>
+    <button *ngIf="params.editBtn" mat-icon-button title="Edit" color="primary" (click)="onEditAction()">
+        <mat-icon>edit</mat-icon>
+    </button>
+    <button *ngIf="params.deleteBtn" mat-icon-button color="warn" title="Delete" (click)="onDeleteAction()">
+        <mat-icon>delete</mat-icon>
+    </button>
+</ng-container>
